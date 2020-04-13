@@ -94,7 +94,7 @@ html, body {
 
 /*General Styles*/
 
-	*{
+	body{
 		background-color: @primaryColor;
 	}
 
@@ -103,7 +103,8 @@ html, body {
 header{
 	font-family: @headerFont;
 	text-transform: uppercase;
-	background-image: url("images/banner.jfif");
+	background-image: url("/images/bg.jpg");
+	height: 50vh;
 
 	nav{
 		display: flex;
@@ -114,18 +115,24 @@ header{
 			text-decoration: none;
 			text-transform: capitalize;
 			padding: 4px;
+			&:hover{
+				color: @textColor;
+				transition: 0.4s ease;
+			}
 		}
 	}
 	.banner{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding: 2%;
+		justify-content: center;
+		padding: 10%;
 			
 		h1{
 				font-size: 5.5rem;
 				letter-spacing: 4px;
 				color: @secondaryColor;
+				text-align: center;
 			}
 		h2{
 			font-size: 3rem;
@@ -164,26 +171,26 @@ header{
 }
 
 /*Career and References Section*/
-#careerRef{
+#rowOne{
 	.sectionStyles();
 
 	h3{
 		.headerStyles();
 	}
-	p{
+	ul{
 		.paragraphStyles();
 	}
 }
 
 /*Academic and Skills Section*/
 
-#academSkills{
+#rowTwo{
 	.sectionStyles();
 
 	h3{
 		.headerStyles();
 	}
-	p{
+	ul{
 		.paragraphStyles();
 	}
 }
@@ -197,7 +204,8 @@ footer{
 
 		a{
 			.navStyles();
-			padding: 
+			margin: 20px;
 		}
+
 	}
 }
