@@ -147,11 +147,55 @@ table {
 html,
 body {
   height: 100%;
+  font-size: 62.5%;
 }
 /*Variables and Mix-ins*/
-@main Font:
-.navStyles(): {
-  text-decoration: none;
+/*General Styles*/
+* {
+  background-color: #193441;
+}
+/*Header and Navbar*/
+header {
+  font-family: 'Noto Sans TC', sans-serif;
+  text-transform: uppercase;
+}
+header nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+header nav a {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.8rem;
+  color: #e7a633;
   border-left: solid 3px #e7a633;
-  font-family: ;
+  padding: 4px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+header .banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  background-image: url("images/banner.jfif");
+}
+header .banner h1 {
+  font-size: 5.5rem;
+  letter-spacing: 4px;
+  color: #9fc4b3;
+}
+header .banner h2 {
+  font-size: 3rem;
+  font-family: 'Quicksand', sans-serif;
+  color: ivory;
+}
+/*About Section*/
+#aboutMe {
+  font-size: 2.5rem;
+  padding: 2%;
+}
+#aboutMe h2 {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 3rem;
+  color: #9fc4b3;
 }

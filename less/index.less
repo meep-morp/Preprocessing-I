@@ -57,6 +57,7 @@ table {
 
 html, body {
 	height: 100%;
+	font-size: 62.5%;
 }
 /*Variables and Mix-ins*/
 @primaryColor: #193441;
@@ -66,11 +67,65 @@ html, body {
 @headerFont: 'Noto Sans TC', sans-serif;
 @mainFont: 'Quicksand', sans-serif;
 
-.navStyles(): {
-	text-decoration: none;
-	border-left: solid 3px @accentColor;
+.navStyles() {
 	font-family: @mainFont;
+	font-size: 1.8rem;
+	color: @accentColor;
+	border-left: solid 3px @accentColor;
+	padding: 4px;
 }
+
+/*General Styles*/
+
+	*{
+		background-color: @primaryColor;
+	}
 
 /*Header and Navbar*/
 
+header{
+	font-family: @headerFont;
+	text-transform: uppercase;
+
+	nav{
+		display: flex;
+		justify-content: space-evenly;
+
+		a{
+			.navStyles();
+			text-decoration: none;
+			text-transform: capitalize;
+		}
+	}
+	.banner{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 2%;
+		background-image: url("images/banner.jfif");
+			
+		h1{
+				font-size: 5.5rem;
+				letter-spacing: 4px;
+				color: @secondaryColor;
+			}
+		h2{
+			font-size: 3rem;
+			font-family: @mainFont;
+			color:@textColor
+		}
+	}
+}
+
+/*About Section*/
+
+#aboutMe{
+	font-size: 2.5rem;
+	padding: 2%;
+
+	h2{
+		font-family: @headerFont;
+		font-size: 3rem;
+		color:@secondaryColor
+	}
+}
