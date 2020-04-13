@@ -152,7 +152,7 @@ body {
 /*Variables and Mix-ins*/
 .sectionStyles {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   font-size: 1.8rem;
   flex-wrap: wrap;
@@ -160,6 +160,11 @@ body {
 /*General Styles*/
 body {
   background-color: #193441;
+}
+p {
+  color: ivory;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.6rem;
 }
 /*Header and Navbar*/
 header {
@@ -230,14 +235,20 @@ header .banner h2 {
 #aboutMe p {
   color: ivory;
   font-family: 'Quicksand', sans-serif;
+  font-size: 1.6rem;
 }
 /*Career and References Section*/
 #rowOne {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   font-size: 1.8rem;
   flex-wrap: wrap;
+}
+#rowOne .career {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
 }
 #rowOne h3 {
   font-size: 2.5rem;
@@ -245,15 +256,20 @@ header .banner h2 {
   font-family: 'Noto Sans TC', sans-serif;
   font-size: 3rem;
   color: #9fc4b3;
+  text-align: left;
 }
 #rowOne ul {
-  color: ivory;
+  color: #9fc4b3;
+  font-size: 2rem;
   font-family: 'Quicksand', sans-serif;
+}
+#rowOne ul li {
+  margin: 20px;
 }
 /*Academic and Skills Section*/
 #rowTwo {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   font-size: 1.8rem;
   flex-wrap: wrap;
@@ -265,8 +281,12 @@ header .banner h2 {
   font-size: 3rem;
   color: #9fc4b3;
 }
+#rowTwo .career {
+  width: 45%;
+}
 #rowTwo ul {
-  color: ivory;
+  color: #9fc4b3;
+  font-size: 2rem;
   font-family: 'Quicksand', sans-serif;
 }
 /* Footer */

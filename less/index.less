@@ -80,13 +80,19 @@ html, body {
 	font-size: 3rem;
 	color:@secondaryColor
 }
+.header4Styles(){
+	color: @secondaryColor;
+	font-size: 2rem;
+	font-family: @mainFont;
+}
 .paragraphStyles(){
 	color: @textColor;
 	font-family: @mainFont;
+	font-size: 1.6rem;
 }
 .sectionStyles{
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
 	font-size: 1.8rem;
 	flex-wrap: wrap;
@@ -96,6 +102,10 @@ html, body {
 
 	body{
 		background-color: @primaryColor;
+	}
+
+	p{
+		.paragraphStyles();
 	}
 
 /*Header and Navbar*/
@@ -172,27 +182,45 @@ header{
 
 /*Career and References Section*/
 #rowOne{
+	display: flex;
+	.career{
+		display: flex;
+		flex-direction: column;
+		width: 45%;
+	}
 	.sectionStyles();
 
 	h3{
 		.headerStyles();
+		text-align: left;
 	}
 	ul{
-		.paragraphStyles();
+		.header4Styles();
+
+		li{
+			margin: 20px;
+		}
 	}
 }
 
 /*Academic and Skills Section*/
 
 #rowTwo{
+
 	.sectionStyles();
 
 	h3{
 		.headerStyles();
 	}
-	ul{
-		.paragraphStyles();
+
+	.career{
+		width: 45%;
 	}
+
+	ul{
+		.header4Styles();
+	}
+
 }
 
 /* Footer */
