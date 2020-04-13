@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Noto Sans TC Black'), local('NotoSansTC-Black'), url(https://fonts.gstatic.com/s/notosanstc/v10/-nFkOG829Oofr2wohFbTp9i9uwYvDQ.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/quicksand/v20/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkP8o18E.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -133,4 +147,11 @@ table {
 html,
 body {
   height: 100%;
+}
+/*Variables and Mix-ins*/
+@main Font:
+.navStyles(): {
+  text-decoration: none;
+  border-left: solid 3px #e7a633;
+  font-family: ;
 }

@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&family=Quicksand&display=swap');
 // Is this working?
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -56,4 +58,19 @@ table {
 html, body {
 	height: 100%;
 }
+/*Variables and Mix-ins*/
+@primaryColor: #193441;
+@secondaryColor: #9fc4b3;
+@accentColor: #e7a633;
+@textColor: ivory;
+@headerFont: 'Noto Sans TC', sans-serif;
+@mainFont: 'Quicksand', sans-serif;
+
+.navStyles(): {
+	text-decoration: none;
+	border-left: solid 3px @accentColor;
+	font-family: @mainFont;
+}
+
+/*Header and Navbar*/
 
