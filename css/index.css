@@ -150,6 +150,13 @@ body {
   font-size: 62.5%;
 }
 /*Variables and Mix-ins*/
+.sectionStyles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  flex-wrap: wrap;
+}
 /*General Styles*/
 * {
   background-color: #193441;
@@ -158,6 +165,7 @@ body {
 header {
   font-family: 'Noto Sans TC', sans-serif;
   text-transform: uppercase;
+  background-image: url("images/banner.jfif");
 }
 header nav {
   display: flex;
@@ -177,7 +185,6 @@ header .banner {
   flex-direction: column;
   align-items: center;
   padding: 2%;
-  background-image: url("images/banner.jfif");
 }
 header .banner h1 {
   font-size: 5.5rem;
@@ -191,11 +198,58 @@ header .banner h2 {
 }
 /*About Section*/
 #aboutMe {
-  font-size: 2.5rem;
-  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
 }
 #aboutMe h2 {
+  font-size: 2.5rem;
+  padding: 30px;
   font-family: 'Noto Sans TC', sans-serif;
   font-size: 3rem;
   color: #9fc4b3;
+}
+/*Career and References Section*/
+#careerRef {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  flex-wrap: wrap;
+}
+#careerRef h3 {
+  font-size: 2.5rem;
+  padding: 30px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 3rem;
+  color: #9fc4b3;
+}
+/*Academic and Skills Section*/
+#academSkills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  flex-wrap: wrap;
+}
+#academSkills h3 {
+  font-size: 2.5rem;
+  padding: 30px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 3rem;
+  color: #9fc4b3;
+}
+/* Footer */
+footer {
+  display: flex;
+  justify-content: end;
+}
+footer a {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.8rem;
+  color: #e7a633;
+  border-left: solid 3px #e7a633;
+  padding: 4px;
 }
