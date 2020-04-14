@@ -100,8 +100,12 @@ html, body {
 
 /*General Styles*/
 
-	body{
-		background-color: @primaryColor;
+	*{
+		border: 1px orange solid;
+	}
+
+	html{
+		background: @primaryColor;
 	}
 
 	p{
@@ -139,19 +143,25 @@ header{
 		padding: 10%;
 			
 		h1{
-				font-size: 5.5rem;
-				letter-spacing: 4px;
-				color: @secondaryColor;
-				text-align: center;
-			}
+			font-size: 5.5rem;
+			letter-spacing: 4px;
+			color: @secondaryColor;
+			text-align: center;
+		}
 		h2{
 			font-size: 3rem;
 			font-family: @mainFont;
-			color:@textColor
+			color:@textColor;
 		}
 	}
 }
+/*Main*/
 
+.main{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
 /*About Section*/
 
 #aboutMe{
@@ -182,18 +192,21 @@ header{
 
 /*Career and References Section*/
 #rowOne{
-	display: flex;
+	.sectionStyles();
+	text-align: center;
+
 	.career{
+		text-align: center;
 		display: flex;
 		flex-direction: column;
-		width: 45%;
+
 	}
 	.sectionStyles();
 
 	h3{
 		.headerStyles();
-		text-align: left;
 	}
+
 	ul{
 		.header4Styles();
 
@@ -206,34 +219,71 @@ header{
 /*Academic and Skills Section*/
 
 #rowTwo{
-
+	text-align: center;
+	padding: 4%;
 	.sectionStyles();
 
 	h3{
 		.headerStyles();
 	}
 
-	.career{
-		width: 45%;
-	}
-
 	ul{
 		.header4Styles();
+
+		li{
+			margin: 25px;
+		}
 	}
 
 }
 
 /* Footer */
 footer{
+	background: @secondaryColor;
 	nav{
 		display: flex;
 		justify-content: end;
-		width: 100%;
 
 		a{
 			.navStyles();
+			color: @primaryColor;
 			margin: 20px;
+			padding: 4px;
+
+			&:hover{
+				color: @textColor;
+				transition: 0.5s ease;
+			}
 		}
 
 	}
+}
+/* Media Queries*/
+
+@media(max-width: 500px){
+	header{
+		height: 75vh;
+
+		.banner{
+			padding: 45%;
+		}
+	}
+	#aboutMe{
+		img{
+			height: 50%;
+		}
+	}
+
+	#rowTwo{
+		flex-direction: column;
+		margin-bottom: 10%;
+	}
+
+	footer{
+		justify-content: center;
+	}
+}
+
+@media (max-width: 800px){
+
 }

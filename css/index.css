@@ -158,8 +158,11 @@ body {
   flex-wrap: wrap;
 }
 /*General Styles*/
-body {
-  background-color: #193441;
+* {
+  border: 1px orange solid;
+}
+html {
+  background: #193441;
 }
 p {
   color: ivory;
@@ -208,6 +211,12 @@ header .banner h2 {
   font-family: 'Quicksand', sans-serif;
   color: ivory;
 }
+/*Main*/
+.main {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
 /*About Section*/
 #aboutMe {
   display: flex;
@@ -239,6 +248,7 @@ header .banner h2 {
 }
 /*Career and References Section*/
 #rowOne {
+  text-align: center;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -246,9 +256,9 @@ header .banner h2 {
   flex-wrap: wrap;
 }
 #rowOne .career {
+  text-align: center;
   display: flex;
   flex-direction: column;
-  width: 45%;
 }
 #rowOne h3 {
   font-size: 2.5rem;
@@ -256,7 +266,6 @@ header .banner h2 {
   font-family: 'Noto Sans TC', sans-serif;
   font-size: 3rem;
   color: #9fc4b3;
-  text-align: left;
 }
 #rowOne ul {
   color: #9fc4b3;
@@ -268,6 +277,8 @@ header .banner h2 {
 }
 /*Academic and Skills Section*/
 #rowTwo {
+  text-align: center;
+  padding: 4%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -281,24 +292,51 @@ header .banner h2 {
   font-size: 3rem;
   color: #9fc4b3;
 }
-#rowTwo .career {
-  width: 45%;
-}
 #rowTwo ul {
   color: #9fc4b3;
   font-size: 2rem;
   font-family: 'Quicksand', sans-serif;
 }
+#rowTwo ul li {
+  margin: 25px;
+}
 /* Footer */
+footer {
+  background: #9fc4b3;
+}
 footer nav {
   display: flex;
   justify-content: end;
-  width: 100%;
 }
 footer nav a {
   font-family: 'Quicksand', sans-serif;
   font-size: 1.8rem;
   color: #e7a633;
   border-left: solid 3px #e7a633;
+  color: #193441;
   margin: 20px;
+  padding: 4px;
+}
+footer nav a:hover {
+  color: ivory;
+  transition: 0.5s ease;
+}
+/* Media Queries*/
+@media (max-width: 500px) {
+  header {
+    height: 75vh;
+  }
+  header .banner {
+    padding: 45%;
+  }
+  #aboutMe img {
+    height: 50%;
+  }
+  #rowTwo {
+    flex-direction: column;
+    margin-bottom: 10%;
+  }
+  footer {
+    justify-content: center;
+  }
 }
