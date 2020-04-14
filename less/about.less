@@ -106,6 +106,7 @@ html, body {
 
 html{
     background: @primaryColor;
+    scroll-behavior: smooth;
 }
 
 p{
@@ -158,6 +159,37 @@ nav{
     }
 }
 }
+/*About Section*/
+
+#About{
+    .sectionStyles();
+    padding: 0 20%;
+    flex-direction: column;
+    align-items: center;
+        p{
+            text-align: center;
+            font-size: 2rem;
+        }
+        h2{
+            .headerStyles();
+        }
+        .gallery{
+            display: flex;
+            height: 50vh;
+            justify-content: space-evenly;
+        } 
+            img{
+                border-radius: 50%;
+                width: 40%;
+                margin: 5%;
+                &:hover{
+                    border: 10px @accentColor dotted;
+                    opacity: 50%;
+                    transition: 0.4s ease;
+
+                }
+            }
+    }
 
 /* Footer */
 
