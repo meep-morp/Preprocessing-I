@@ -100,153 +100,67 @@ html, body {
 
 /*General Styles*/
 
-	*{
-		border: 1px orange solid;
-	}
+*{
+    border: 1px orange solid;
+}
 
-	html{
-		background: @primaryColor;
-	}
+html{
+    background: @primaryColor;
+}
 
-	p{
-		.paragraphStyles();
-	}
+p{
+    .paragraphStyles();
+}
 
 /*Header and Navbar*/
 
 header{
-	font-family: @headerFont;
-	text-transform: uppercase;
-	background-image: url("/images/bg.jpg");
-	background-size: cover;
-	height: 50vh;
+font-family: @headerFont;
+text-transform: uppercase;
+background-image: url("/images/bg.jpg");
+height: 40vh;
 
-	nav{
-		display: flex;
-		justify-content: space-evenly;
+nav{
+    display: flex;
+    justify-content: space-evenly;
 
-		a{
-			.navStyles();
-			text-decoration: none;
-			text-transform: capitalize;
-			padding: 4px;
-			&:hover{
-				color: @textColor;
-				transition: 0.4s ease;
-			}
-		}
-	}
-	.hiddenNav a{
-		z-index: -1;
-	}
-	.banner{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		padding: 10%;
-			
-		h1{
-			font-size: 5.5rem;
-			letter-spacing: 4px;
-			color: @secondaryColor;
-			text-align: center;
-		}
-		h2{
-			font-size: 3rem;
-			font-family: @mainFont;
-			color:@textColor;
-		}
-	}
+    a{
+        .navStyles();
+        text-decoration: none;
+        text-transform: capitalize;
+        padding: 4px;
+        &:hover{
+            color: @textColor;
+            transition: 0.4s ease;
+        }
+    }
 }
-
-/*About Section*/
-
-#aboutMe{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: 1.8rem;
-	
-	p{
-		width:75%;
-		text-align: center;
-	}
-	
-	img{
-		width: 25%;
-		border-radius: 50%;
-		margin: 35px;
-	}
-
-	h2{
-		.headerStyles();
-	}
-	p{
-		.paragraphStyles();
-	}
+.hiddenNav a{
+    z-index: -1;
 }
-
-/*Career and References Section*/
-#rowOne{
-	.sectionStyles();
-	text-align: center;
-
-	.career{
-		text-align: center;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-
-		p{
-			width: 75%;
-		}
-
-	}
-	.sectionStyles();
-
-	h3{
-		.headerStyles();
-	}
-
-	ul{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		.header4Styles();
-
-		li{
-			margin: 20px;
-		}
-	}
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+        
+    h1{
+        font-size: 5.5rem;
+        letter-spacing: 4px;
+        color: @secondaryColor;
+        text-align: center;
+    }
+    h2{
+        font-size: 3rem;
+        font-family: @mainFont;
+        color:@textColor;
+    }
 }
-
-/*Academic and Skills Section*/
-
-#rowTwo{
-	text-align: center;
-	padding: 4%;
-	.sectionStyles();
-
-	h3{
-		.headerStyles();
-	}
-
-	ul{
-		.header4Styles();
-
-		li{
-			margin: 25px;
-		}
-	}
-	p{
-		padding: 5%;
-	}
-
 }
 
 /* Footer */
+
 footer{
 	background: @secondaryColor;
 	nav{
@@ -283,23 +197,10 @@ footer{
 			padding: 45%;
 		}
 	}
-	#aboutMe{
-		img{
-			height: 50%;
-		}
-	}
-
 	footer{
 		justify-content: center;
 	}
 }
 @media(max-width: 850px){
-	#rowTwo{
-		flex-direction: column;
-		margin-bottom: 10%;
-	}
-	#rowOne{
-		flex-direction: column;
-	}
 
 }
