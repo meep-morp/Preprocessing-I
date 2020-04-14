@@ -199,6 +199,11 @@ header{
 		text-align: center;
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+
+		p{
+			width: 75%;
+		}
 
 	}
 	.sectionStyles();
@@ -208,6 +213,9 @@ header{
 	}
 
 	ul{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		.header4Styles();
 
 		li{
@@ -234,6 +242,9 @@ header{
 			margin: 25px;
 		}
 	}
+	p{
+		padding: 5%;
+	}
 
 }
 
@@ -258,11 +269,17 @@ footer{
 
 	}
 }
+
 /* Media Queries*/
 
 @media(max-width: 500px){
 	header{
 		height: 75vh;
+
+		nav a{
+			position: sticky;
+			top: 0;
+		}
 
 		.banner{
 			padding: 45%;
@@ -274,16 +291,14 @@ footer{
 		}
 	}
 
-	#rowTwo{
-		flex-direction: column;
-		margin-bottom: 10%;
-	}
-
 	footer{
 		justify-content: center;
 	}
 }
-
-@media (max-width: 800px){
+@media(max-width: 800px){
+	#rowTwo{
+		flex-direction: column;
+		margin-bottom: 10%;
+	}
 
 }

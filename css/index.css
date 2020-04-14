@@ -259,6 +259,10 @@ header .banner h2 {
   text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+#rowOne .career p {
+  width: 75%;
 }
 #rowOne h3 {
   font-size: 2.5rem;
@@ -268,6 +272,9 @@ header .banner h2 {
   color: #9fc4b3;
 }
 #rowOne ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #9fc4b3;
   font-size: 2rem;
   font-family: 'Quicksand', sans-serif;
@@ -300,6 +307,9 @@ header .banner h2 {
 #rowTwo ul li {
   margin: 25px;
 }
+#rowTwo p {
+  padding: 5%;
+}
 /* Footer */
 footer {
   background: #9fc4b3;
@@ -326,17 +336,23 @@ footer nav a:hover {
   header {
     height: 75vh;
   }
+  header nav a {
+    position: sticky;
+    top: 0;
+  }
   header .banner {
     padding: 45%;
   }
   #aboutMe img {
     height: 50%;
   }
+  footer {
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) {
   #rowTwo {
     flex-direction: column;
     margin-bottom: 10%;
-  }
-  footer {
-    justify-content: center;
   }
 }
